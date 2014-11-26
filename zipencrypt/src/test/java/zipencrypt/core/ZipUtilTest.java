@@ -113,7 +113,8 @@ public class ZipUtilTest {
         } finally {
             try {
                 writer.close();
-            } catch (Exception ex) {
+            } catch (IOException ex) {
+                 logger.log(Level.SEVERE, "Error writing file", ex);
             }
         }
 
