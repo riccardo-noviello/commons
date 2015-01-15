@@ -25,9 +25,9 @@ It works very simalarly to Hibernate. <b>First</b>, we start by defining a Pojo,
 </p></br>
 
 <pre>
-    // The Entity describes the table name "person" on our schema "sqlmapper"
-    @Entity(name="sqlmapper.persons")
-    public class Person {
+// The Entity describes the table name "person" on our schema "sqlmapper"
+@Entity(name="sqlmapper.persons")
+public class Person {
 
     // The column name must be specified here, as well as specifying the primary key
     @Column(name="id", primary=true)
