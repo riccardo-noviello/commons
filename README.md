@@ -25,9 +25,9 @@ It works very simalarly to Hibernate. <b>First</b>, we start by defining a Pojo,
 </p></br>
 
 <pre>
-// The Entity describes the table name "person" on our schema "sqlmapper"
-@Entity(name="sqlmapper.persons")
-public class Person {
+    // The Entity describes the table name "person" on our schema "sqlmapper"
+    @Entity(name="sqlmapper.persons")
+    public class Person {
 
     // The column name must be specified here, as well as specifying the primary key
     @Column(name="id", primary=true)
@@ -65,4 +65,37 @@ public interface PersonDao extends SimpleDao<Person> {
 
 }
 
+</pre>
+
+</br></br>
+<p><b>Done!</b>That's it. We now have CRUD access to the "persons" table </p>.
+</br></br>
+<b>An Example:</b>
+
+<pre>
+@Test
+    public void testInsertWithOneToOneRelatioship() {
+        Person p1 = new Person();
+        p1.setFirstname("Bob");
+        // ...
+
+        Address a1 = new Address();
+        a1.setCountry("United Kingdom");
+        // ...
+        
+        p1.setAddress(a1);
+
+        Long id = (Long) personDao.persist(p1);
+        assertNotNull(id);
+
+        // find a person through the api
+        Person result = personDao.findByPrimaryKey(id);
+        assertNotNull(...);
+        // ...
+
+        // delete person
+        personDao.delete(result);
+        
+        // we don't need to ensure the address has been deleted, this policy is up to the foreign key configuration
+    }
 </pre>
