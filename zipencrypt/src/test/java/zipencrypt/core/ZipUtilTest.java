@@ -32,7 +32,7 @@ public class ZipUtilTest {
     private static final String SOURCE_FOLDER_2 = "/home/novier/temp2";
 
     ZipUtil zipUtil = new ZipUtil("test123");
-    
+
     @Before
     public void createFolders() {
         createDirectory(ZIPTEST);
@@ -49,7 +49,7 @@ public class ZipUtilTest {
     }
 
     @Test
-    public void encryptExistingZip_validZip(){
+    public void encryptExistingZip_validZip() {
         //zip a File
         createTempTextFile(SOURCE_FOLDER + "/filename1.txt");
 
@@ -57,22 +57,22 @@ public class ZipUtilTest {
         File target = new File(TARGET_ZIP);
 
         zipUtil.zip(directory, target);
-        
+
         //encrypt the zipped file
         zipUtil.encryptZipFile(target);
-        
+
         assertTrue(fileExists(target.getPath()));
-        
+
         ZipFile zip;
-		try {
-			zip = new ZipFile(target);
-			assertTrue(zip.isEncrypted());
-		} catch (ZipException e) {
-			logger.log(Level.SEVERE, "Error testing Zip file encryption");
-		}
-        
+        try {
+            zip = new ZipFile(target);
+            assertTrue(zip.isEncrypted());
+        } catch (ZipException e) {
+            logger.log(Level.SEVERE, "Error testing Zip file encryption");
+        }
+
     }
-    
+
     @Test
     public void zipFile_valid() {
         createTempTextFile(SOURCE_FOLDER + "/filename1.txt");
@@ -114,7 +114,7 @@ public class ZipUtilTest {
             try {
                 writer.close();
             } catch (IOException ex) {
-                 logger.log(Level.SEVERE, "Error writing file", ex);
+                logger.log(Level.SEVERE, "Error writing file", ex);
             }
         }
 
@@ -166,7 +166,7 @@ public class ZipUtilTest {
      */
     private boolean directoryExists(String source) {
         File f = new File(source);
-        if (f.exists() && f.isDirectory()) {
+        if(f.exists() && f.isDirectory()) {
             return true;
         }
         return false;
@@ -180,7 +180,7 @@ public class ZipUtilTest {
      */
     private boolean fileExists(String source) {
         File f = new File(source);
-        if (f.exists() && !f.isDirectory()) {
+        if(f.exists() && !f.isDirectory()) {
             return true;
         }
         return false;
@@ -214,7 +214,7 @@ public class ZipUtilTest {
     }
 
     /**
-     *
+     * 
      * @param foldername
      */
     private void createDirectory(String foldername) {

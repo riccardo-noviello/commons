@@ -1,0 +1,10 @@
+/home/novier/NetBeansProjects/satellite_projects/simplesqlmappertest/src/main/java/com/riccardonoviello/simplesqlmappertest/dao/PersonDaoImpl.java
+/home/novier/NetBeansProjects/satellite_projects/simplesqlmappertest/src/main/java/com/riccardonoviello/simplesqlmappertest/dao/JobDaoImpl.java
+/home/novier/NetBeansProjects/satellite_projects/simplesqlmappertest/src/main/java/com/riccardonoviello/simplesqlmappertest/model/Address.java
+/home/novier/NetBeansProjects/satellite_projects/simplesqlmappertest/src/main/java/com/riccardonoviello/simplesqlmappertest/model/Person.java
+/home/novier/NetBeansProjects/satellite_projects/simplesqlmappertest/src/main/java/com/riccardonoviello/simplesqlmappertest/dao/PersonDao.java
+/home/novier/NetBeansProjects/satellite_projects/simplesqlmappertest/src/main/java/com/riccardonoviello/simplesqlmappertest/dao/JobDao.java
+/home/novier/NetBeansProjects/satellite_projects/simplesqlmappertest/src/main/java/com/riccardonoviello/simplesqlmappertest/controller/HomeController.java
+/home/novier/NetBeansProjects/satellite_projects/simplesqlmappertest/src/main/java/com/riccardonoviello/simplesqlmappertest/config/MainApp.java
+/home/novier/NetBeansProjects/satellite_projects/simplesqlmappertest/src/main/java/com/riccardonoviello/simplesqlmappertest/model/Job.java
+/home/novier/NetBeansProjects/satellite_projects/simplesqlmappertest/src/main/java/com/riccardonoviello/simplesqlmappertest/config/WebMvcConfig.java

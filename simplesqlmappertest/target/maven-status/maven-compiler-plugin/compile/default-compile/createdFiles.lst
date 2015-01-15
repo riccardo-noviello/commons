@@ -1,0 +1,10 @@
+com/riccardonoviello/simplesqlmappertest/dao/PersonDaoImpl.class
+com/riccardonoviello/simplesqlmappertest/config/MainApp.class
+com/riccardonoviello/simplesqlmappertest/model/Job.class
+com/riccardonoviello/simplesqlmappertest/config/WebMvcConfig.class
+com/riccardonoviello/simplesqlmappertest/model/Address.class
+com/riccardonoviello/simplesqlmappertest/model/Person.class
+com/riccardonoviello/simplesqlmappertest/dao/PersonDao.class
+com/riccardonoviello/simplesqlmappertest/dao/JobDao.class
+com/riccardonoviello/simplesqlmappertest/controller/HomeController.class
+com/riccardonoviello/simplesqlmappertest/dao/JobDaoImpl.class

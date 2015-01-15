@@ -21,7 +21,9 @@ import java.lang.annotation.Target;
 public @interface Column {
 
     public String name() default "";
-
+    
+    public boolean primary() default false;
+    
     public boolean unique() default false;
 
     public boolean nullable() default true;
