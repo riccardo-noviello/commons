@@ -18,7 +18,7 @@
 </tr>
 </table>
 
-<h3>Java SQL ORM</h3>
+<h3>1. Java SQL ORM [simplesqlmapper]</h3>
 <b>How it works:</b>
 <p>
 It works very simalarly to Hibernate. <b>First</b>, we start by defining a Pojo, for example <b>"Person"</b>:
