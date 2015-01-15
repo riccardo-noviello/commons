@@ -24,7 +24,7 @@
 It works very simalarly to Hibernate. <b>First</b>, we start by defining a Pojo, for example <b>"Person"</b>:
 </p></br>
 
-<code>
+<pre>
 // The Entity describes the table name "person" on our schema "sqlmapper"
 @Entity(name="sqlmapper.persons")
 public class Person {
@@ -50,11 +50,11 @@ public class Person {
     private List<Job> jobHistory;
     
     // ... getters and setters
-</code>
+</pre>
 </br></br>
 <p><b>Second</b> we describe the <b>DAO</b></p>
 
-<code>
+<pre>
 **
  * The DAO for the Person Class. This just extends the SimpleDao class providing
  * a type Person, which is the object we want to persist.
@@ -65,4 +65,4 @@ public interface PersonDao extends SimpleDao<Person> {
 
 }
 
-</code>
+</pre>
