@@ -19,9 +19,13 @@
 </table>
 
 <h3>1. Java SQL ORM [simplesqlmapper]</h3>
+<b>Why:</b>
+<p>This project is implemented on top of SpringJDBC template. The reason is that in a previous position I had to use SpringJDBC template (which I admit I like) although there was loads of boilerplate code and often I would find mistakes in the queries. A simple CRUD implementation with tests and mapping would take me a good hour or so. This library enabled me to do the same in <5 minutes. 
+</p></br>
+
 <b>How it works:</b>
 <p>
-It works very simalarly to Hibernate. <b>First</b>, we start by defining a Pojo, for example <b>"Person"</b>:
+It works by defining an Entity and then inheriting an abstract DAO class to handle basic queries. <b>First</b>, we start by defining a Pojo, for example <b>"Person"</b>:
 </p></br>
 
 <pre>
